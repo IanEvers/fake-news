@@ -1,0 +1,20 @@
+---
+  const { topicTitle } = Astro.props;
+
+
+  const backgroundColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+
+---
+
+<div class="d23-title-bar d23-chain-child">
+  <h2 class="d23-title-bar-text d23-title-bar-color">
+    <a class="d23-title-bar-anchor" aria-label="TICMAS: APRENDIENDO JUNTOS" rel="noreferrer noopener">{topicTitle}
+    </a>
+  </h2>
+</div>
+
+<style define:vars={{ backgroundColor }}>
+  .d23-title-bar-color {
+    border-bottom: 2px solid var(--backgroundColor);
+  }
+</style>

@@ -1,81 +1,590 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+  import Layout from '../layouts/Layout.astro';
+  import StoryCardBig from '../components/storyCardBig.astro'
+  import StoryCardMedium from '../components/storyCardMedium.astro'
+  import TopicTitle from '../components/TopicTitle.astro';
+  import OpinionArticle from '../components/OpinionArticle.astro';
+
+
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
-	</main>
-</Layout>
+  <div id="fusion-app" class="fusion-app | infobae grid">
+    <div class="d23_homepage_layout">
+      <div class="d23_content-section">
+        <div class="d23_top-home">
+          <div class="d23-masthead-navbar" id="mastheadnavbar">
+            <div class="d23-site-header" id="siteheader">
+              <div class="d23-navbar-ad-container" style="display: none;">
+                <div class="top_banner_970x80 ad-wrapper">
+                  <div class="dfpAd ad_margin_wrapper">
+                    <div id="infobae/home/top_banner_970x80" class="infobae/home/top_banner_970x80 arcad"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="d23-sectionnav-container">
+                <span aria-label="Menu" class="d23-hamburger hamburger-wrapper close" role="button" tabindex="-1"><svg
+                    id="hamburger-icon" viewBox="0 0 26 18" xmlns="http://www.w3.org/2000/svg"
+                    class="d23-hamburger-icon" data-name="d23-hamburger-icon">
+                    <path
+                      d="M25.5717 16.7012L21.9803 10.5972C24.5126 8.65261 25.0461 5.06027 23.1566 2.4654C21.2068 -0.181909 17.4223 -0.798845 14.7129 1.11134C13.4039 2.03575 12.5328 3.40467 12.2788 4.97241C12.0131 6.5371 12.391 8.11241 13.333 9.39693C14.9522 11.6158 17.9321 12.4481 20.495 11.4386L24.0896 17.5313C24.2339 17.7766 24.4178 17.9226 24.6266 17.9775C24.8237 18.0293 25.0458 17.9901 25.2632 17.8765C25.9397 17.4933 25.7701 17.0218 25.5864 16.6929L25.5717 16.7012ZM22.4317 7.03204C22.1334 8.12461 21.4098 9.04439 20.4098 9.61093C19.4246 10.1691 18.2247 10.3294 17.1229 10.0397C14.8149 9.43283 13.4395 7.0951 14.0579 4.83029C14.6763 2.56549 17.0587 1.2158 19.3667 1.82265C21.6747 2.4295 23.0501 4.76723 22.4317 7.03204Z">
+                    </path>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0 0.762712C0 0.341478 0.341478 0 0.762712 0H11.943C12.3643 0 12.7057 0.341478 12.7057 0.762712C12.7057 1.18395 12.3643 1.52542 11.943 1.52542H0.762712C0.341478 1.52542 0 1.18395 0 0.762712ZM0 6.25424C0 5.833 0.341478 5.49153 0.762712 5.49153H9.74372C10.165 5.49153 10.5064 5.833 10.5064 6.25424C10.5064 6.67547 10.165 7.01695 9.74372 7.01695H0.762712C0.341478 7.01695 0 6.67547 0 6.25424ZM0 11.7458C0 11.3245 0.341478 10.9831 0.762712 10.9831H11.943C12.3643 10.9831 12.7057 11.3245 12.7057 11.7458C12.7057 12.167 12.3643 12.5085 11.943 12.5085H0.762712C0.341478 12.5085 0 12.167 0 11.7458ZM0 17.2373C0 16.8161 0.341478 16.4746 0.762712 16.4746H20.6729C21.0941 16.4746 21.4356 16.8161 21.4356 17.2373C21.4356 17.6585 21.0941 18 20.6729 18H0.762712C0.341478 18 0 17.6585 0 17.2373Z">
+                    </path>
+                  </svg></span><a aria-label="infobae" class="d23-site-logo visible"
+                  href="https://www.infobae.com"><span class="d23-site-logo visible"><img alt="Infobae"
+                      class="d23-logo-image" height="25px" src="/logo_infobae_naranja.svg?d=1451"
+                      width="105px"></span></a>
+                <p class="d23-date-info">10 Jul, 2023</p>
+                <div class="d23-section-menu d23-section-nav"><a class="d23-menu-item"
+                    href="https://www.infobae.com/colombia/" rel="noopener noreferrer">Colombia</a><a
+                    class="d23-menu-item" href="https://www.infobae.com/espana/" rel="noopener noreferrer">España</a><a
+                    class="d23-menu-item" href="https://www.infobae.com/mexico/" rel="noopener noreferrer">México</a><a
+                    class="d23-menu-item" href="https://www.infobae.com/peru/" rel="noopener noreferrer">Perú</a><a
+                    class="d23-menu-item" href="https://www.infobae.com/america/" rel="noopener noreferrer">Mundo</a><a
+                    class="d23-menu-item" href="https://www.infobae.com/ultimas-noticias/"
+                    rel="noopener noreferrer">Últimas Noticias</a><a class="d23-menu-item"
+                    href="https://www.infobae.com/politica/" rel="noopener noreferrer">Política</a><a
+                    class="d23-menu-item" href="https://www.infobae.com/economia/"
+                    rel="noopener noreferrer">Economía</a><a class="d23-menu-item"
+                    href="https://www.infobae.com/deportes/" rel="noopener noreferrer">Deportes</a><a
+                    class="d23-menu-item" href="https://www.infobae.com/sociedad/"
+                    rel="noopener noreferrer">Sociedad</a><a class="d23-menu-item"
+                    href="https://www.infobae.com/sociedad/policiales/" rel="noopener noreferrer">Policiales</a><a
+                    class="d23-menu-item" href="https://www.infobae.com/tendencias/"
+                    rel="noopener noreferrer">Tendencias</a><a class="d23-menu-item"
+                    href="https://www.infobae.com/teleshow/" rel="noopener noreferrer">Teleshow</a><a
+                    class="d23-menu-item" href="https://www.infobae.com/que-puedo-ver/" rel="noopener noreferrer">Qué
+                    puedo ver</a></div>
+                <div class="d23-login-register-container">
+                  <div class="d23-content-button"><button aria-label="register link"
+                      class="d23-identity-button d23-primary" style="width: 132px;">REGISTRARME</button><button
+                      aria-label="register link" class="d23-identity-button d23-secondary" style="width: 132px;">INICIAR
+                      SESION</button></div><button class="d23-account-button d23-account-button--mobile"
+                    aria-label="myAccount"><svg class="user-default-avatar-d23" viewBox="0 0 32 32" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M24.544 27.9848C24.544 26.7713 24.5689 25.6161 24.544 24.4608C24.411 21.9425 22.3996 19.9311 19.8813 19.8064C17.3381 19.7649 14.7948 19.7649 12.2515 19.8064C9.63345 19.8563 7.51406 21.9674 7.44757 24.5855C7.42264 25.5745 7.43926 26.5636 7.43095 27.5443V28.0263C3.00101 24.8764 0.665526 19.5405 1.34706 14.1464C2.36935 6.05951 9.75812 0.32469 17.845 1.34698C23.8292 2.10331 28.7578 6.4252 30.2788 12.2681C31.8496 18.194 29.564 24.4691 24.544 27.9848M15.9833 6.50001C13.1575 6.50832 10.8801 8.80225 10.8885 11.6281C10.8968 14.4539 13.1907 16.7313 16.0165 16.7229C18.8424 16.7146 21.1197 14.4207 21.1114 11.5949C21.1114 11.5949 21.1114 11.5865 21.1114 11.5782C21.0948 8.76069 18.8008 6.4917 15.9833 6.50001"
+                        fill="#D5D5D5"></path>
+                      <circle cx="16" cy="16" r="15.75" stroke="#777777" stroke-width="0.5"></circle>
+                    </svg></button>
+                </div>
+              </div>
+            </div>
+            <nav class="content d23-side-menu" id="side-menu">
+              <div class="dropdown">
+                <div id="dropdown-item-ctn0" class="dropdown-item-ctn"><a class="item non-bold"
+                    href="https://www.infobae.com/colombia/" rel="noopener noreferrer">Colombia</a></div>
+                <div id="dropdown-body0" class="dropdown-body"></div>
+              </div>
+              <div class="dropdown">
+                <div id="dropdown-item-ctn1" class="dropdown-item-ctn"><a class="item non-bold"
+                    href="https://www.infobae.com/espana/" rel="noopener noreferrer">España</a></div>
+                <div id="dropdown-body1" class="dropdown-body"></div>
+              </div>
+              <div class="dropdown">
+                <div id="dropdown-item-ctn2" class="dropdown-item-ctn"><a class="item non-bold"
+                    href="https://www.infobae.com/mexico/" rel="noopener noreferrer">México</a></div>
+                <div id="dropdown-body2" class="dropdown-body"></div>
+              </div>
+              <div class="dropdown">
+                <div id="dropdown-item-ctn3" class="dropdown-item-ctn"><a class="item non-bold"
+                    href="https://www.infobae.com/peru/" rel="noopener noreferrer">Perú</a></div>
+                <div id="dropdown-body3" class="dropdown-body"></div>
+              </div>
+              <div class="dropdown">
+                <div id="dropdown-item-ctn4" class="dropdown-item-ctn"><a class="item"
+                    href="https://www.infobae.com/america/" rel="noopener noreferrer">Mundo</a>
+                  <div aria-label="Menu Item" class="d23-icon-dropdown" role="button" tabindex="-1"><svg id="down-icon0"
+                      width="12" height="12" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"
+                      class="icon-drop ">
+                      <path
+                        d="M-9.87742e-07 1.167C-9.69427e-07 0.748023 0.335182 0.41284 0.754162 0.41284C0.969636 0.41284 1.17314 0.496636 1.31679 0.652256L5.98541 5.72789L10.654 0.652257C10.9294 0.341015 11.4082 0.293132 11.7314 0.568461C12.0546 0.84379 12.0905 1.32262 11.8152 1.64584C11.8032 1.65781 11.7913 1.68175 11.7793 1.69372L6.54804 7.36789C6.26074 7.67913 5.78191 7.6911 5.47067 7.41577C5.4587 7.4038 5.44673 7.39183 5.42278 7.36789L0.203504 1.68175C0.071824 1.5381 -9.96114e-07 1.35853 -9.87742e-07 1.167Z"
+                        fill="#9B9B9B"></path>
+                    </svg></div>
+                </div>
+                <div id="dropdown-body4" class="dropdown-body"><a class="d23-dropdown-item"
+                    href="https://www.infobae.com/venezuela/"><span class="d23-dropdown-submenu">Venezuela</span></a><a
+                    class="d23-dropdown-item" href="https://www.infobae.com/entretenimiento/"><span
+                      class="d23-dropdown-submenu">Entretenimiento</span></a><a class="d23-dropdown-item"
+                    href="https://www.infobae.com/thenewyorktimes/"><span class="d23-dropdown-submenu">The New York
+                      Times</span></a><a class="d23-dropdown-item" href="https://www.infobae.com/economist/"><span
+                      class="d23-dropdown-submenu">The economist</span></a><a class="d23-dropdown-item"
+                    href="https://www.infobae.com/wapo/"><span class="d23-dropdown-submenu">The Washington
+                      Post</span></a><a class="d23-dropdown-item" href="https://www.infobae.com/america/realeza/"><span
+                      class="d23-dropdown-submenu">Realeza</span></a><a class="d23-dropdown-item"
+                    href="https://www.infobae.com/america/opinion/"><span
+                      class="d23-dropdown-submenu">Opinión</span></a></div>
+              </div>
+              <div class="dropdown">
+                <div id="dropdown-item-ctn5" class="dropdown-item-ctn"><a class="item non-bold"
+                    href="https://www.infobae.com/ultimas-noticias/" rel="noopener noreferrer">Últimas Noticias</a>
+                </div>
+                <div id="dropdown-body5" class="dropdown-body"></div>
+              </div>
+              <div class="dropdown">
+                <div id="dropdown-item-ctn6" class="dropdown-item-ctn"><a class="item non-bold"
+                    href="https://www.infobae.com/politica/" rel="noopener noreferrer">Política</a></div>
+                <div id="dropdown-body6" class="dropdown-body"></div>
+              </div>
+              <div class="dropdown">
+                <div id="dropdown-item-ctn7" class="dropdown-item-ctn"><a class="item non-bold"
+                    href="https://www.infobae.com/economia/" rel="noopener noreferrer">Economía</a></div>
+                <div id="dropdown-body7" class="dropdown-body"></div>
+              </div>
+              <div class="dropdown">
+                <div id="dropdown-item-ctn8" class="dropdown-item-ctn"><a class="item non-bold"
+                    href="https://www.infobae.com/deportes/" rel="noopener noreferrer">Deportes</a></div>
+                <div id="dropdown-body8" class="dropdown-body"></div>
+              </div>
+              <div class="dropdown">
+                <div id="dropdown-item-ctn9" class="dropdown-item-ctn"><a class="item non-bold"
+                    href="https://www.infobae.com/sociedad/" rel="noopener noreferrer">Sociedad</a></div>
+                <div id="dropdown-body9" class="dropdown-body"></div>
+              </div>
+              <div class="dropdown">
+                <div id="dropdown-item-ctn10" class="dropdown-item-ctn"><a class="item non-bold"
+                    href="https://www.infobae.com/sociedad/policiales/" rel="noopener noreferrer">Policiales</a></div>
+                <div id="dropdown-body10" class="dropdown-body"></div>
+              </div>
+              <div class="dropdown">
+                <div id="dropdown-item-ctn11" class="dropdown-item-ctn"><a class="item non-bold"
+                    href="https://www.infobae.com/tendencias/" rel="noopener noreferrer">Tendencias</a></div>
+                <div id="dropdown-body11" class="dropdown-body"></div>
+              </div>
+              <div class="dropdown">
+                <div id="dropdown-item-ctn12" class="dropdown-item-ctn"><a class="item non-bold"
+                    href="https://www.infobae.com/teleshow/" rel="noopener noreferrer">Teleshow</a></div>
+                <div id="dropdown-body12" class="dropdown-body"></div>
+              </div>
+              <div class="dropdown">
+                <div id="dropdown-item-ctn13" class="dropdown-item-ctn"><a class="item non-bold"
+                    href="https://www.infobae.com/que-puedo-ver/" rel="noopener noreferrer">Qué puedo ver</a></div>
+                <div id="dropdown-body13" class="dropdown-body"></div>
+              </div>
+              <div class="dropdown">
+                <div id="dropdown-item-ctn14" class="dropdown-item-ctn"><a class="item non-bold"
+                    href="https://www.infobae.com/educacion/" rel="noopener noreferrer">Educación</a></div>
+                <div id="dropdown-body14" class="dropdown-body"></div>
+              </div>
+              <div class="dropdown">
+                <div id="dropdown-item-ctn15" class="dropdown-item-ctn"><a class="item non-bold"
+                    href="https://www.infobae.com/podcasts/" rel="noopener noreferrer">Podcasts</a></div>
+                <div id="dropdown-body15" class="dropdown-body"></div>
+              </div>
+              <div class="dropdown">
+                <div id="dropdown-item-ctn16" class="dropdown-item-ctn"><a class="item non-bold"
+                    href="https://www.infobae.com/newsletters/" rel="noopener noreferrer">Newsletters</a></div>
+                <div id="dropdown-body16" class="dropdown-body"></div>
+              </div>
+              <div class="dropdown">
+                <div id="dropdown-item-ctn17" class="dropdown-item-ctn"><a class="item non-bold"
+                    href="https://www.infobae.com/leamos/" rel="noopener noreferrer">Leamos</a></div>
+                <div id="dropdown-body17" class="dropdown-body"></div>
+              </div>
+              <div class="dropdown">
+                <div id="dropdown-item-ctn18" class="dropdown-item-ctn"><a class="item non-bold"
+                    href="https://www.infobae.com/cultura/" rel="noopener noreferrer">Cultura</a></div>
+                <div id="dropdown-body18" class="dropdown-body"></div>
+              </div>
+              <div class="dropdown">
+                <div id="dropdown-item-ctn19" class="dropdown-item-ctn"><a class="item non-bold"
+                    href="https://www.infobae.com/tecno/" rel="noopener noreferrer">Tecno</a></div>
+                <div id="dropdown-body19" class="dropdown-body"></div>
+              </div>
+              <div class="dropdown">
+                <div id="dropdown-item-ctn20" class="dropdown-item-ctn"><a class="item non-bold"
+                    href="https://www.infobae.com/fire/" rel="noopener noreferrer">Esports</a></div>
+                <div id="dropdown-body20" class="dropdown-body"></div>
+              </div>
+              <div class="dropdown">
+                <div id="dropdown-item-ctn21" class="dropdown-item-ctn"><a class="item non-bold"
+                    href="https://www.infobae.com/virales/" rel="noopener noreferrer">Virales</a></div>
+                <div id="dropdown-body21" class="dropdown-body"></div>
+              </div>
+              <div class="dropdown">
+                <div id="dropdown-item-ctn22" class="dropdown-item-ctn"><a class="item non-bold"
+                    href="https://www.infobae.com/campo/" rel="noopener noreferrer">Campo</a></div>
+                <div id="dropdown-body22" class="dropdown-body"></div>
+              </div>
+              <div class="dropdown">
+                <div id="dropdown-item-ctn23" class="dropdown-item-ctn"><a class="item non-bold"
+                    href="https://www.infobae.com/judiciales/" rel="noopener noreferrer">Judiciales</a></div>
+                <div id="dropdown-body23" class="dropdown-body"></div>
+              </div>
+              <div class="dropdown">
+                <div id="dropdown-item-ctn24" class="dropdown-item-ctn"><a class="item non-bold"
+                    href="https://www.infobae.com/salud/" rel="noopener noreferrer">Salud</a></div>
+                <div id="dropdown-body24" class="dropdown-body"></div>
+              </div>
+              <div class="dropdown">
+                <div id="dropdown-item-ctn25" class="dropdown-item-ctn"><a class="item non-bold"
+                    href="https://www.infobae.com/autos/" rel="noopener noreferrer">Autos</a></div>
+                <div id="dropdown-body25" class="dropdown-body"></div>
+              </div>
+              <div class="d23-dark-mode-btn ">
+                <div class="d23-dark-mode-btn__container ">
+                  <div class="d23-dark-mode-btn__toggler ">
+                    <div class="d23-dark-mode-btn__circle "></div><svg class="d23-light-icon" width="12" height="12"
+                      viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M12 6.10608C11.8953 6.34856 11.7107 6.445 11.4462 6.43122C11.2092 6.41745 10.9722 6.43122 10.738 6.42847C10.4762 6.42847 10.2861 6.24385 10.2861 6.00137C10.2861 5.75614 10.4762 5.57703 10.738 5.57428C10.975 5.57428 11.2119 5.5853 11.4462 5.57152C11.7107 5.55499 11.8925 5.65418 12 5.89666V6.11159V6.10608Z"
+                        fill="#1F1F1F"></path>
+                      <path
+                        d="M5.89114 12C5.64866 11.8953 5.55222 11.7107 5.566 11.4462C5.57978 11.2092 5.566 10.9722 5.56876 10.738C5.56876 10.4762 5.75337 10.2861 5.99585 10.2861C6.23833 10.2861 6.42295 10.4762 6.42295 10.738C6.42295 10.975 6.41192 11.2119 6.4257 11.4462C6.44223 11.7107 6.34304 11.8925 6.10056 12H5.88563H5.89114Z"
+                        fill="#1F1F1F"></path>
+                      <path
+                        d="M5.99859 2.57084C7.89158 2.57084 9.43188 4.11389 9.42636 6.00414C9.42361 7.88887 7.88331 9.42642 5.99859 9.42642C4.10835 9.42642 2.5653 7.88336 2.57081 5.99036C2.57357 4.10563 4.11386 2.56808 5.99859 2.56808V2.57084ZM6.00685 3.42778C4.5878 3.42503 3.43051 4.57681 3.42775 5.99036C3.425 7.40942 4.57678 8.56672 5.99032 8.56947C7.40938 8.57223 8.56666 7.42045 8.56942 6.00414C8.57218 4.58508 7.4204 3.42778 6.0041 3.42503L6.00685 3.42778Z"
+                        fill="#1F1F1F"></path>
+                      <path
+                        d="M6.42851 0.856948C6.42851 0.994721 6.42851 1.13249 6.42851 1.27302C6.423 1.52377 6.24114 1.7139 6.00417 1.7139C5.7672 1.7139 5.57708 1.52652 5.57432 1.27853C5.57157 0.997476 5.57157 0.716419 5.57432 0.435362C5.57432 0.184616 5.76445 0 6.00417 0C6.23563 0 6.423 0.187371 6.42851 0.429852C6.43127 0.573135 6.42851 0.716419 6.42851 0.856948Z"
+                        fill="#1F1F1F"></path>
+                      <path
+                        d="M0.851433 6.4285C0.713661 6.4285 0.575889 6.4285 0.435361 6.4285C0.18737 6.42299 0 6.23562 0 5.9959C0 5.75617 0.18737 5.57431 0.440872 5.57155C0.716416 5.5688 0.994717 5.57155 1.27026 5.57155C1.52101 5.57155 1.71113 5.75893 1.71389 5.9959C1.71389 6.23838 1.52652 6.42575 1.26475 6.4285C1.12698 6.4285 0.989206 6.4285 0.848678 6.4285H0.851433Z"
+                        fill="#1F1F1F"></path>
+                      <path
+                        d="M1.6312 2.11615C1.63671 1.88745 1.71662 1.75519 1.87368 1.67804C2.03074 1.60088 2.19607 1.60915 2.32558 1.72763C2.52672 1.90949 2.71961 2.10238 2.90422 2.30352C3.05301 2.4661 3.03097 2.7196 2.87667 2.87391C2.7196 3.02821 2.46886 3.05025 2.30629 2.90146C2.1079 2.72235 1.92053 2.52947 1.73867 2.33384C1.67805 2.26495 1.65325 2.163 1.63396 2.11891L1.6312 2.11615Z"
+                        fill="#1F1F1F"></path>
+                      <path
+                        d="M9.8865 1.63127C10.1152 1.63953 10.2475 1.71944 10.3246 1.8765C10.4018 2.03632 10.388 2.19889 10.2695 2.32564C10.0877 2.52679 9.89477 2.71967 9.69362 2.90153C9.52829 3.05033 9.27755 3.02553 9.12324 2.86847C8.96894 2.71141 8.9524 2.46066 9.1012 2.29809C9.28306 2.10245 9.47319 1.91232 9.66882 1.73322C9.73495 1.6726 9.83966 1.65055 9.8865 1.63127Z"
+                        fill="#1F1F1F"></path>
+                      <path
+                        d="M1.63124 9.87282C1.65604 9.82597 1.69186 9.71576 1.7635 9.6386C1.92332 9.4595 2.09691 9.29141 2.27326 9.12609C2.44961 8.95525 2.70587 8.96076 2.87395 9.12609C3.04203 9.29141 3.04754 9.55043 2.8767 9.72678C2.70862 9.90313 2.53503 10.0767 2.35592 10.2476C2.22091 10.3771 2.05558 10.4074 1.88474 10.3302C1.71942 10.2558 1.63675 10.1208 1.62849 9.87557L1.63124 9.87282Z"
+                        fill="#1F1F1F"></path>
+                      <path
+                        d="M10.3716 9.89209C10.3605 10.1208 10.2779 10.2531 10.1208 10.3275C9.96099 10.4019 9.80117 10.3881 9.67167 10.2696C9.47603 10.0877 9.28591 9.90036 9.10405 9.70197C8.94974 9.53389 8.97178 9.27763 9.13436 9.12057C9.29142 8.96902 9.54216 8.95248 9.70473 9.10403C9.89762 9.28314 10.085 9.46775 10.2613 9.66339C10.3247 9.73503 10.3495 9.8425 10.3716 9.89209Z"
+                        fill="#1F1F1F"></path>
+                    </svg><svg class="d23-dark-icon" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M0 5.6173C0.0203122 5.43051 0.0372386 5.24373 0.0643215 5.06034C0.314839 3.37929 1.12056 2.02766 2.4747 1.00545C3.0773 0.550379 3.74422 0.227753 4.46869 0.0205937C4.65488 -0.0337432 4.83769 0.0205937 4.93925 0.17002C5.0442 0.319447 5.04081 0.492646 4.90878 0.659052C4.52624 1.14129 4.25202 1.67447 4.09968 2.27218C3.82885 3.33175 3.90671 4.36075 4.36374 5.3558C4.84785 6.40178 5.62648 7.15571 6.67594 7.61078C7.44104 7.94359 8.24337 8.04887 9.07278 7.93341C9.89881 7.81794 10.6267 7.48852 11.28 6.97232C11.3647 6.9044 11.473 6.83988 11.578 6.8229C11.8589 6.77875 12.0519 7.00628 11.9876 7.28136C11.754 8.25264 11.3241 9.12542 10.6673 9.88274C9.8785 10.7929 8.90352 11.4279 7.74572 11.7506C5.92101 12.26 4.20463 11.9917 2.64059 10.9219C1.29998 10.005 0.470565 8.72808 0.128643 7.13533C0.0744772 6.88742 0.0575511 6.63272 0.0236975 6.38141C0.0169267 6.34066 0.0101555 6.2999 0.0033848 6.25575C0.0033848 6.0452 0.0033848 5.83125 0.0033848 5.62069L0 5.6173ZM3.63589 1.2228C1.77732 2.17709 0.51119 4.33359 0.897122 6.72441C1.28644 9.1424 3.23303 10.9491 5.68742 11.1563C8.04025 11.3566 9.99699 9.95746 10.8399 8.24584C8.6293 9.16617 6.55069 8.9692 4.80045 7.26778C3.04683 5.55956 2.78277 3.48118 3.63927 1.2228H3.63589Z"
+                        fill="white"></path>;
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </nav>
+            <nav class="d23-right-panel " id="right-panel">
+              <div class="d23-right-panel__header">
+                <div class="d23-right-panel__user-data">
+                  <div class="d23-right-panel__content-avatar"><svg class="user-default-avatar-d23" viewBox="0 0 32 32"
+                      fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M24.544 27.9848C24.544 26.7713 24.5689 25.6161 24.544 24.4608C24.411 21.9425 22.3996 19.9311 19.8813 19.8064C17.3381 19.7649 14.7948 19.7649 12.2515 19.8064C9.63345 19.8563 7.51406 21.9674 7.44757 24.5855C7.42264 25.5745 7.43926 26.5636 7.43095 27.5443V28.0263C3.00101 24.8764 0.665526 19.5405 1.34706 14.1464C2.36935 6.05951 9.75812 0.32469 17.845 1.34698C23.8292 2.10331 28.7578 6.4252 30.2788 12.2681C31.8496 18.194 29.564 24.4691 24.544 27.9848M15.9833 6.50001C13.1575 6.50832 10.8801 8.80225 10.8885 11.6281C10.8968 14.4539 13.1907 16.7313 16.0165 16.7229C18.8424 16.7146 21.1197 14.4207 21.1114 11.5949C21.1114 11.5949 21.1114 11.5865 21.1114 11.5782C21.0948 8.76069 18.8008 6.4917 15.9833 6.50001"
+                        fill="#D5D5D5"></path>
+                      <circle cx="16" cy="16" r="15.75" stroke="#777777" stroke-width="0.5"></circle>
+                    </svg></div>
+                  <div class="d23-right-panel__content-info"><span>Bienvenido</span><span>Por favor, ingresa a tu
+                      cuenta.</span></div>
+                </div>
+                <div class="d23-right-panel__auth-buttons"><button class="d23-right-panel__auth-buttons-register"
+                    aria-label="register">REGISTRARME</button><button class="d23-right-panel__auth-buttons-login"
+                    aria-label="login">INICIAR SESIÓN</button></div>
+              </div>
+            </nav>
+          </div>
+          <div class="width_full" style="height: 0px;"></div>
+        </div>
+        <div class="d23_home-body d23_page-container">
+          <div class="d23-masthead-header">
+            <div id="fusion-static-enter:static-masthead-header" data-fusion-component="static-masthead-header"
+              data-persistent-entry="true" style="display: none;"></div><a aria-label="Logo link"
+              class="d23-mhh-site-logo" href="https://www.infobae.com/?noredirect" rel="noreferrer noopener"><img
+                alt="Infobae " height="65" loading="eager" src="/logo_infobae_naranja.svg?d=1451" width="280"></a>
+            <div class="d23-mhh-nav-container"><a aria-label="Header nav link" class="d23-mhh-nav-item"
+                href="https://www.infobae.com/economia/divisas/dolar-hoy/">Dólar hoy</a><a aria-label="Header nav link"
+                class="d23-mhh-nav-item" href="https://www.infobae.com/tag/cecilia-strzyzowski/">Caso Cecilia
+                Strzyzowski</a><a aria-label="Header nav link" class="d23-mhh-nav-item"
+                href="https://www.infobae.com/tag/premios-martin-fierro/">Premios Martín Fierro</a><a
+                aria-label="Header nav link" class="d23-mhh-nav-item"
+                href="https://www.infobae.com/tag/alquileres/">Alquileres</a><a aria-label="Header nav link"
+                class="d23-mhh-nav-item" href="https://www.infobae.com/tag/elecciones-2023-argentina/">Elecciones
+                2023</a><a aria-label="Header nav link" class="d23-mhh-nav-item"
+                href="https://www.infobae.com/newsletters/">Newsletters</a></div>
+            <div id="fusion-static-exit:static-masthead-header" data-fusion-component="static-masthead-header"
+              data-persistent-exit="true" style="display: none;"></div>
+            <div class="header_izq_180x70 ad-wrapper ad-desktop">
+              <div class="dfpAd masthead_header_left_ad absolute">
+                <div id="infobae/home/header_izq_180x70" class="infobae/home/header_izq_180x70 arcad"></div>
+              </div>
+            </div>
+            <div class="header_der_180x70 ad-wrapper ad-desktop">
+              <div class="dfpAd masthead_header_right_ad absolute">
+                <div id="infobae/home/header_der_180x70" class="infobae/home/header_der_180x70 arcad"></div>
+              </div>
+            </div>
+          </div>
+          <div class="d23-tcc" style="">
+            <div class="d23-tcc_ctn d23-tcc_left">
+              <div class="d23-tcc_itm d23-tcc_bc">
+                <StoryCardBig></StoryCardBig>
+              </div>
+              <div class="d23-tcc_itm">
+                <StoryCardMedium></StoryCardMedium>
+              </div>
+              <div class="d23-tcc_itm">
+                <StoryCardMedium></StoryCardMedium>
+              </div>
+            </div>
+          </div>
+          <div class="exp_push_1_970x250 ad-wrapper">
+            <div class="dfpAd display_block ad_margin_wrapper ad_text">
+              <div id="infobae/home/exp_push_1_970x250" class="infobae/home/exp_push_1_970x250 arcad"></div>
+            </div>
+          </div>
+          <div class="d23-default-chain-ctn" style="">
+            <div class="d23-dc-ctn d23-dc-4">
+              <StoryCardMedium></StoryCardMedium>
+              <StoryCardMedium></StoryCardMedium>
+              <StoryCardMedium></StoryCardMedium>
+              <StoryCardMedium></StoryCardMedium>
+            </div>
+          </div>
+          <div class="d23-default-chain-ctn" style="">
+            <div class="d23-dc-ctn d23-dc-2">
+              <StoryCardMedium></StoryCardMedium>
+              <StoryCardMedium></StoryCardMedium>
+            </div>
+          </div>
+          <div class="d23-default-chain-ctn" style="">
+            <div class="d23-dc-ctn d23-dc-3">
+              <StoryCardMedium></StoryCardMedium>
+              <StoryCardMedium></StoryCardMedium>
+              <StoryCardMedium></StoryCardMedium>
+            </div>
+          </div>
+          <div class="d23-default-chain-ctn" style="">
+            <div class="d23-dc-ctn d23-dc-2">
+              <StoryCardMedium></StoryCardMedium>
+              <StoryCardMedium></StoryCardMedium>
+            </div>
+          </div>
+          <div class="exp_push_2_970x250 ad-wrapper">
+            <div class="dfpAd display_block ad_margin_wrapper ad_text">
+              <div id="infobae/home/exp_push_2_970x250" class="infobae/home/exp_push_2_970x250 arcad"></div>
+            </div>
+          </div>
 
-<style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
-</style>
+          <div class="d23-default-chain-ctn" style="">
+            <TopicTitle topicTitle="ticmas"> </TopicTitle>
+
+            <div class="d23-dc-ctn d23-dc-3">
+              <StoryCardMedium></StoryCardMedium>
+              <StoryCardMedium></StoryCardMedium>
+              <StoryCardMedium></StoryCardMedium>
+            </div>
+          </div>
+
+          <div class="d23-default-chain-ctn">
+            <TopicTitle topicTitle="qué puedo ver"> </TopicTitle>
+
+            <div class="d23-dc-ctn d23-dc-3">
+              <StoryCardMedium></StoryCardMedium>
+              <StoryCardMedium></StoryCardMedium>
+              <StoryCardMedium></StoryCardMedium>
+            </div>
+          </div>
+
+          <div class="d23-default-chain-ctn">
+            <TopicTitle topicTitle="qué puedo ver"> </TopicTitle>
+
+            <div class="d23-dc-ctn d23-dc-4">
+              <StoryCardMedium></StoryCardMedium>
+              <StoryCardMedium></StoryCardMedium>
+              <StoryCardMedium></StoryCardMedium>
+              <StoryCardMedium></StoryCardMedium>
+            </div>
+          </div>
+
+          <div class="d23-default-chain-ctn">
+            <TopicTitle topicTitle="qué puedo ver"> </TopicTitle>
+
+            <div class="d23-dc-ctn d23-dc-4">
+              <StoryCardMedium></StoryCardMedium>
+              <StoryCardMedium></StoryCardMedium>
+              <StoryCardMedium></StoryCardMedium>
+              <StoryCardMedium></StoryCardMedium>
+            </div>
+          </div>
+
+          <div class="d23-default-chain-ctn">
+            <TopicTitle topicTitle="qué puedo ver"> </TopicTitle>
+
+            <div class="d23-dc-ctn d23-dc-4">
+              <StoryCardMedium></StoryCardMedium>
+              <StoryCardMedium></StoryCardMedium>
+              <StoryCardMedium></StoryCardMedium>
+              <StoryCardMedium></StoryCardMedium>
+            </div>
+          </div>
+        </div>
+
+        <div class="d23_page-container">
+          <div class="d23-default-chain-ctn" style="">
+
+            <TopicTitle topicTitle="Opinión"> </TopicTitle>
+
+            <div class="d23-dc-ctn d23-dc-3">
+              <OpinionArticle title="Crímenes de familia: una historia que se repite"
+                authorImageUrl="https://www.infobae.com/new-resizer/JxRulfzI3N3Xqd_tstoGnj75iRA=/60x60/filters:format(webp):quality(85)/s3.amazonaws.com/arc-authors/infobae/9298bfb2-3334-4515-80b6-119f77a1b38d.png"
+                author="Carina Cabo">
+              </OpinionArticle>
+
+              <OpinionArticle title="Crímenes de familia: una historia que se repite"
+                authorImageUrl="https://www.infobae.com/new-resizer/JxRulfzI3N3Xqd_tstoGnj75iRA=/60x60/filters:format(webp):quality(85)/s3.amazonaws.com/arc-authors/infobae/9298bfb2-3334-4515-80b6-119f77a1b38d.png"
+                author="Carina Cabo">
+              </OpinionArticle>
+
+              <OpinionArticle title="Crímenes de familia: una historia que se repite"
+                authorImageUrl="https://www.infobae.com/new-resizer/JxRulfzI3N3Xqd_tstoGnj75iRA=/60x60/filters:format(webp):quality(85)/s3.amazonaws.com/arc-authors/infobae/9298bfb2-3334-4515-80b6-119f77a1b38d.png"
+                author="Carina Cabo">
+              </OpinionArticle>
+            </div>
+          </div>
+        </div>
+
+        <footer class="d23_footer-ctn">
+          <div id="fusion-static-enter:f0fd3ne4LCSj1KU" data-fusion-component="f0fd3ne4LCSj1KU" style="display: none;">
+          </div>
+          <div id="footer-menu">
+            <div class="d23-footer-menu">
+              <div class="d23-footer-column">
+                <div class="d23-social-copy ">
+                  <div class="d23-logo-wrapper"><img alt="footer-logo" class="d23-footer-logo" decoding="async"
+                      fetchpriority="low" loading="lazy" src="/pf/resources/images/d23_logo_infobae_white.svg?d=1451">
+                  </div>Seguinos:<div class="d23-social-media-buttons"><a href="https://www.facebook.com/Infobae/"
+                      class="d23-social-logo" aria-label="facebook link"><svg class="d23-svg-icon" width="32"
+                        height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect class="d23-svg-icon-bg" x="0.5" y="0.5" width="31" height="31" rx="15.5" fill="white">
+                        </rect>
+                        <path
+                          d="M14.1487 24.9911V15.914H11.5V13.0014H14.1487V12.7155C14.1487 11.9293 14.1202 11.1342 14.1867 10.348C14.1867 9.09719 14.9462 7.96255 16.1424 7.41756C16.5886 7.22101 17.0633 7.09593 17.5475 7.04233C18.5348 6.97086 19.5222 6.98872 20.5 7.10487V9.72258H20.2437C19.6836 9.72258 19.1329 9.72258 18.5728 9.74045C17.9462 9.70471 17.4051 10.1514 17.3671 10.7411C17.3671 10.7947 17.3671 10.8393 17.3671 10.893C17.3481 11.5541 17.3671 12.2152 17.3671 12.8763C17.3671 12.9121 17.3671 12.9567 17.3861 12.9925H20.4335C20.3006 13.9842 20.1677 14.9401 20.0348 15.9229H17.3766V25H14.1582L14.1487 24.9911Z"
+                          fill="#9B9B9B"></path>
+                        <rect class="d23-svg-icon-border" x="0.5" y="0.5" width="31" height="31" rx="15.5"
+                          stroke="#9B9B9B"></rect>
+                      </svg></a><a href="https://twitter.com/Infobae/" class="d23-social-logo"
+                      aria-label="twitter link"><svg class="d23-svg-icon" width="32" height="32" viewBox="0 0 32 32"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect class="d23-svg-icon-bg" x="0.5" y="0.5" width="31" height="31" rx="15.5" fill="white">
+                        </rect>
+                        <path
+                          d="M24.6071 13.0372C24.3036 13.2375 24.1339 13.5859 24.1607 13.943C24.1339 18.0889 21.5893 21.8253 17.6786 23.4454C16.1696 24.0289 14.5357 24.2815 12.9196 24.177C11.2768 24.0812 9.67858 23.6196 8.25894 22.8095C8.15179 22.766 8.0625 22.6963 8 22.6005C9.91964 22.7747 11.8393 22.226 13.3661 21.0763C12.5893 21.0415 11.8393 20.7802 11.2143 20.336C10.5982 19.8918 10.1339 19.2647 9.89285 18.5505C10.375 18.6289 10.8571 18.6202 11.3393 18.5418C11.3928 18.5243 11.4464 18.5069 11.4911 18.4721C9.64286 17.8885 8.46429 16.434 8.61607 14.9098C9.11607 15.1537 9.66071 15.293 10.2232 15.3104C9.44642 14.7792 8.90178 13.9866 8.69643 13.0808C8.48214 12.1924 8.63392 11.2517 9.10713 10.4678C9.54463 10.973 10.0268 11.452 10.5446 11.8788C11.9554 13.0285 13.6518 13.795 15.4732 14.1085C15.8304 14.1695 16.1964 14.1869 16.5536 14.2479C16.7857 14.2827 16.7946 14.1956 16.7679 14.0214C16.4286 12.0443 17.7946 10.1804 19.8125 9.84944C20.9375 9.66653 22.0804 9.9975 22.9286 10.7378C23.0714 10.8946 23.3036 10.9469 23.5 10.8685C24.1696 10.6943 24.8125 10.4504 25.4196 10.1281L25.4732 10.102C25.4732 10.102 25.4732 10.1456 25.4732 10.163C25.2232 10.8685 24.75 11.4694 24.125 11.8962C24.0804 11.9311 24.0446 11.9659 24.0089 12.0007L24.0357 12.0269C24.7143 11.9485 25.375 11.7743 26 11.513C25.6339 12.0966 25.1696 12.6017 24.6161 13.0198"
+                          fill="#9B9B9B"></path>
+                        <rect class="d23-svg-icon-border" x="0.5" y="0.5" width="31" height="31" rx="15.5"
+                          stroke="#9B9B9B"></rect>
+                      </svg></a><a href="https://www.instagram.com/Infobae/" class="d23-social-logo"
+                      aria-label="instagram link"><svg class="d23-svg-icon" width="32" height="32" viewBox="0 0 32 32"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect class="d23-svg-icon-bg" x="0.5" y="0.5" width="31" height="31" rx="15.5" fill="white">
+                        </rect>
+                        <path
+                          d="M20.3321 10.752C19.7952 10.736 19.3487 11.1413 19.3381 11.68C19.3275 12.2187 19.7368 12.6453 20.2577 12.6667C20.7946 12.6827 21.2411 12.2667 21.2517 11.7387C21.2623 11.2107 20.853 10.7733 20.3321 10.752Z"
+                          fill="#9B9B9B"></path>
+                        <path
+                          d="M24 13.7651C24 13.1785 23.9522 12.5865 23.899 11.9998C23.6864 9.96246 22.3149 8.44779 20.3056 8.15979C19.3116 8.02112 18.2857 7.99979 17.2757 7.99979C15.5429 7.99979 13.7993 7.98912 12.0664 8.11179C9.90831 8.26112 8.33488 9.86113 8.15947 12.0265C8.04784 13.3491 8.04784 14.6771 8 16.0158C8.05316 17.3385 8.05316 18.6771 8.16478 20.0051C8.32957 22.0318 9.74884 23.5571 11.7528 23.8451C12.7628 23.9838 13.7887 24.0051 14.8093 24.0051C16.5422 24.0051 18.2751 24.0158 19.9973 23.8931C21.592 23.7705 22.804 22.9545 23.511 21.4665C23.8193 20.8158 23.9575 20.1171 23.9628 19.4025L23.9522 19.4131C23.9787 17.5358 24 15.6478 24 13.7705V13.7651ZM22.4904 19.6051C22.4425 21.3171 21.3422 22.4105 19.6359 22.4585C17.2385 22.5225 14.8252 22.5225 12.4173 22.4585C10.7322 22.4105 9.62658 21.3171 9.58405 19.6211C9.52027 17.2051 9.52027 14.7785 9.58405 12.3518C9.63189 10.6611 10.7322 9.62112 12.4173 9.49846C13.0179 9.46113 13.6292 9.44512 14.2352 9.43446C14.8306 9.42379 18.4505 9.43446 19.6625 9.50912V9.49846C21.3422 9.59979 22.4425 10.6611 22.4904 12.3358C22.5542 14.7518 22.5542 17.1785 22.4904 19.6051Z"
+                          fill="#9B9B9B"></path>
+                        <path
+                          d="M16.0533 11.8773C13.7835 11.8667 11.939 13.7173 11.939 15.9947C11.939 18.272 13.7569 20.096 16.0267 20.1013C18.2964 20.112 20.141 18.2613 20.141 15.984C20.141 13.7067 18.323 11.8773 16.0533 11.8773ZM16.0426 18.672C14.5702 18.672 13.3742 17.4613 13.3742 15.984C13.3848 14.5173 14.5755 13.328 16.0373 13.328H16.0479C17.5097 13.328 18.7004 14.528 18.7004 15.9947C18.7004 17.4613 17.515 18.672 16.0479 18.672H16.0426Z"
+                          fill="#9B9B9B"></path>
+                        <rect class="d23-svg-icon-border" x="0.5" y="0.5" width="31" height="31" rx="15.5"
+                          stroke="#9B9B9B"></rect>
+                      </svg></a><a href="https://www.youtube.com/c/infobae" class="d23-social-logo"
+                      aria-label="youtube link"><svg class="d23-svg-icon" width="32" height="32" viewBox="0 0 32 32"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect class="d23-svg-icon-bg" x="0.5" y="0.5" width="31" height="31" rx="15.5" fill="white">
+                        </rect>
+                        <path
+                          d="M23.9297 14.1599C23.8592 13.526 23.8064 12.8863 23.6832 12.2583C23.5071 11.372 22.8438 10.7792 21.9517 10.6794C21.0654 10.5796 20.1674 10.4857 19.2752 10.4681C17.4029 10.427 15.5247 10.4153 13.6523 10.4387C12.5606 10.4505 11.4689 10.5444 10.3772 10.6207C10.0192 10.6442 9.66701 10.7087 9.33832 10.8848C8.69269 11.237 8.35813 11.8004 8.24661 12.5165C8.02358 13.8958 7.97075 15.281 8.01771 16.672C8.04705 17.4703 8.11749 18.2685 8.18792 19.0668C8.2114 19.3485 8.26422 19.6361 8.35226 19.9061C8.63399 20.7572 9.25028 21.2267 10.1248 21.3089C11.152 21.4087 12.1791 21.4967 13.2063 21.526C14.6267 21.5671 16.0471 21.5789 17.4733 21.5613C18.7118 21.5437 19.9502 21.4674 21.1887 21.4028C21.5115 21.3852 21.8343 21.3441 22.1454 21.2737C23.0199 21.0682 23.5364 20.4989 23.7125 19.6244C23.8768 18.8085 23.9238 17.9751 23.9649 17.1416C23.9708 16.9831 23.9884 16.8247 24.0001 16.6603V15.2223C23.9766 14.8643 23.9708 14.5062 23.9297 14.1482V14.1599ZM14.4036 18.3918V13.5906C15.7947 14.3888 17.1681 15.1812 18.5768 15.9912C17.1798 16.7953 15.8064 17.5877 14.4036 18.3918Z"
+                          fill="#E2E2E2"></path>
+                        <rect class="d23-svg-icon-border" x="0.5" y="0.5" width="31" height="31" rx="15.5"
+                          stroke="#E2E2E2"></rect>
+                      </svg></a><a href="https://web.telegram.org/k/" class="d23-social-logo"
+                      aria-label="telegram link"><svg class="d23-svg-icon" width="32" height="32" viewBox="0 0 32 32"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect class="d23-svg-icon-bg" x="0.5" y="0.5" width="31" height="31" rx="15.5" fill="white">
+                        </rect>
+                        <path
+                          d="M22.8408 8.74494L6.38303 14.9306C6.07012 15.0449 5.91789 15.3794 6.04475 15.6814C6.11241 15.8446 6.2562 15.9752 6.4338 16.0241L10.6201 17.2156L12.1847 21.9976C12.3031 22.3648 12.709 22.5688 13.0812 22.4546C13.1911 22.422 13.2926 22.3567 13.3772 22.2751L15.5422 20.1452L19.7877 23.1482C20.1852 23.4257 20.735 23.3441 21.0225 22.9606C21.0986 22.8626 21.1494 22.7484 21.1747 22.6341L23.9825 9.66708C24.0756 9.22641 23.788 8.7939 23.3313 8.70414C23.1706 8.67149 23.0015 8.68782 22.8492 8.74494M20.7857 11.6256L13.1404 18.154C13.0643 18.2193 13.0135 18.3091 13.0051 18.407L12.709 20.9286C12.709 20.9694 12.6668 21.002 12.6245 20.9939C12.5906 20.9939 12.5653 20.9694 12.5568 20.9449L11.3474 17.1747C11.2882 17.0034 11.3644 16.8157 11.525 16.7178L20.5573 11.3155C20.6504 11.2584 20.7772 11.291 20.828 11.3808C20.8787 11.4624 20.8618 11.5603 20.7941 11.6256"
+                          fill="#9B9B9B"></path>
+                        <rect class="d23-svg-icon-border" x="0.5" y="0.5" width="31" height="31" rx="15.5"
+                          stroke="#9B9B9B"></rect>
+                      </svg></a><a aria-label="linkedIn link" class="d23-social-logo"
+                      href="https://www.linkedin.com/company/infobae/" target="_blank" rel="noreferrer"><svg
+                        class="d23-svg-icon" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect class="d23-svg-icon-bg" x="0.5" y="0.5" width="31" height="31" rx="15.5" fill="white">
+                        </rect>
+                        <path
+                          d="M13.5556 24V13.2231H16.963V14.6949C17.0185 14.6368 17.0648 14.5787 17.1111 14.5206C17.8611 13.349 19.2037 12.739 20.537 12.981C22.3889 13.1359 23.8426 14.7046 23.9259 16.6411C23.9722 17.0478 24 17.4641 24 17.8708C24 19.817 24 21.7633 24 23.7095V23.9806H20.5741V23.6805C20.5741 21.8892 20.5741 20.0882 20.5741 18.2969C20.5741 17.8805 20.5278 17.4545 20.4259 17.0478C20.1945 16.1279 19.2963 15.5663 18.4074 15.8084C18.2037 15.8665 18 15.9633 17.8333 16.0989C17.3333 16.4281 17.0185 16.9897 16.9907 17.6094C16.9722 18.1419 16.9722 18.6842 16.9722 19.2167V23.9903H13.5648L13.5556 24ZM8.22221 24V13.2037H8.74073C9.62036 13.2037 10.5 13.2037 11.3796 13.2037C11.5833 13.2037 11.6482 13.2328 11.6482 13.4748V23.9903H8.22221V24ZM8.00927 9.88254C8.00927 8.84648 8.80555 8.00408 9.78703 8.00408C9.84259 8.00408 9.89816 8.00408 9.95372 8.00408C10.9445 7.9363 11.7963 8.72061 11.8611 9.75666C11.8611 9.79539 11.8611 9.84381 11.8611 9.88254C11.8426 10.9283 11.0278 11.761 10.0278 11.7416C9.99074 11.7416 9.95369 11.7416 9.92591 11.7416H9.90741C8.92592 11.8191 8.07407 11.0445 8 10.0181C8 9.96968 8 9.93095 8 9.88254H8.00927Z"
+                          fill="#9B9B9B"></path>
+                        <rect class="d23-svg-icon-border" x="0.5" y="0.5" width="31" height="31" rx="15.5"
+                          stroke="#9B9B9B"></rect>
+                      </svg></a></div>
+                </div>
+              </div>
+              <div class="d23-footer-column"><span class="d23-footer-title">Secciones</span>
+                <div class="d23-footer-section"><a href="https://www.infobae.com/?noredirect" aria-label="Argentina"
+                    class="d23-footer-link" rel="noopener noreferrer" target="_blank">Argentina</a><a
+                    href="https://www.infobae.com/america/" aria-label="América" class="d23-footer-link"
+                    rel="noopener noreferrer" target="_blank">América</a><a
+                    href="https://www.infobae.com/america/mexico/" aria-label="México" class="d23-footer-link"
+                    rel="noopener noreferrer" target="_blank">México</a><a
+                    href="https://www.infobae.com/america/colombia/" aria-label="Colombia" class="d23-footer-link"
+                    rel="noopener noreferrer" target="_blank">Colombia</a><a href="https://www.infobae.com/feeds/rss/"
+                    aria-label="RSS" class="d23-footer-link" rel="noopener noreferrer" target="_blank">RSS</a><a
+                    href="https://www.infobae.com/america/peru/" aria-label="Perú" class="d23-footer-link"
+                    rel="noopener noreferrer" target="_blank">Perú</a><a
+                    href="https://www.infobae.com/ultimas-noticias/" aria-label="Últimas Noticias"
+                    class="d23-footer-link" rel="noopener noreferrer" target="_blank">Últimas Noticias</a></div>
+              </div>
+              <div class="d23-footer-column"><span class="d23-footer-title">Contáctenos</span>
+                <div class="d23-footer-section"><a href="mailto:contacto@infobae.com" aria-label="Contacto"
+                    class="d23-footer-link" rel="noopener noreferrer" target="_blank">Contacto</a><a
+                    href="mailto:redaccion@infobae.com" aria-label="Redacción" class="d23-footer-link"
+                    rel="noopener noreferrer" target="_blank">Redacción</a><a href="mailto:comercial@infobae.com"
+                    aria-label="Contacto comercial" class="d23-footer-link" rel="noopener noreferrer"
+                    target="_blank">Contacto comercial</a><a href="https://mediakit.infobae.com" aria-label="Media Kit"
+                    class="d23-footer-link" rel="noopener noreferrer" target="_blank">Media Kit</a><a
+                    href="https://www.linkedin.com/company/infobae/jobs/" aria-label="Empleo" class="d23-footer-link"
+                    rel="noopener noreferrer" target="_blank">Empleo</a></div>
+              </div>
+              <div class="d23-footer-column"><span class="d23-footer-title">Legales</span>
+                <div class="d23-footer-section"><a href="https://www.infobae.com/terminos-y-condiciones/"
+                    aria-label="Términos y Condiciones" class="d23-footer-link" rel="noopener noreferrer"
+                    target="_blank">Términos y Condiciones</a><a href="https://www.infobae.com/politicas-de-privacidad/"
+                    aria-label="Política de Privacidad" class="d23-footer-link" rel="noopener noreferrer"
+                    target="_blank">Política de Privacidad</a></div>
+              </div>
+            </div>
+            <div class="d23-copyright"><span class="d23-copyright-text">Todos Los Derechos Reservados ©
+                <!-- -->2023
+                <!-- --> Infobae
+              </span></div>
+          </div>
+          <div id="fusion-static-exit:f0fd3ne4LCSj1KU" data-fusion-component="f0fd3ne4LCSj1KU" style="display: none;">
+          </div>
+          <div class="zocalo_1x1 ad-wrapper">
+            <div class="dfpAd stick_bottom fixed"><button id="infobae_home_zocalo_1x1_close"
+                aria-label="infobae_home_zocalo_1x1" class="absolute close_ad pointer hide"><i
+                  class="close display_flex"></i></button>
+              <div id="infobae/home/zocalo_1x1" class="infobae/home/zocalo_1x1 arcad"></div>
+            </div>
+          </div>
+        </footer>
+      </div>
+      <aside class="d23_span-rail">
+        <div class="d23_span-section">
+          <div class="megalateral_250x600 ad-wrapper ad-desktop">
+            <div
+              class="dfpAd display_block fixed megalateral_ad ad_margin_wrapper dfpAd display_block ad_margin_wrapper"
+              style="top: 46px;">
+              <div id="infobae/home/megalateral_250x600" class="infobae/home/megalateral_250x600 arcad"></div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+</Layout>

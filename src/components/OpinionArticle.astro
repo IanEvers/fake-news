@@ -1,0 +1,18 @@
+---
+
+  const { title, author, authorImageUrl } = Astro.props;
+
+
+---
+
+<a aria-label="El Sarmiento necesita un plan estratégico y no ideas inviables para una campaña" class="d23-opi-ctn"
+  href="/opinion/2023/07/10/el-sarmiento-necesita-un-plan-estrategico-y-no-ideas-inviables-para-una-campana/"
+  rel="canonical">
+  <div class="d23-opi-author">
+    <img alt="Pablo Belenky" height="60" width="60" class="d23-opi-img" src={authorImageUrl} loading="lazy">
+    <p class="d23-opi-aut">{author}</p>
+  </div>
+  <div class="d23-opi-txt">
+    <h2 class="d23-opi-hl">{title} </h2>
+  </div>
+</a>
